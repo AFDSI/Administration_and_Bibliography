@@ -1,0 +1,874 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,minimum-scale=1,initial-scale=1'><meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<title>Web of Trust Terms</title>
+<base href='http://ontomatica.com' target='_blank'>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700'>
+<link rel='stylesheet' type='text/css' href='/service/style/application/RDFa/style_table_min.css'>
+</head><body><h3>Last accessed: </h3>
+
+<div xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="rdf2html">
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/" typeof="owl:Ontology">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Ontology" title="Browse http://www.w3.org/2002/07/owl#Ontology">owl:Ontology</a></th>
+</tr>
+<tr class="http://purl.org/dc/elements/1.1/date">
+<td><a class="browse" href="http://purl.org/dc/elements/1.1/date" title="Browse http://purl.org/dc/elements/1.1/date">dc:date</a></td>
+<td property="dc:date" content="2004-02-23">
+<div class="property-object">2004-02-23</div>
+</td>
+</tr>
+<tr class="http://purl.org/dc/elements/1.1/description">
+<td><a class="browse" href="http://purl.org/dc/elements/1.1/description" title="Browse http://purl.org/dc/elements/1.1/description">dc:description</a></td>
+<td property="dc:description" content="Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.">
+<div class="property-object">Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#imports">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#imports" title="Browse http://www.w3.org/2002/07/owl#imports">owl:imports</a></td>
+<td>
+<div class="property-object" rel="owl:imports"><a class="browse" href="http://www.w3.org/2002/07/owl" title="Browse http://www.w3.org/2002/07/owl">http://www.w3.org/ 2002/ 07/ owl</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:imports"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema" title="Browse http://www.w3.org/2000/01/rdf-schema">http://www.w3.org/ 2000/ 01/ rdf-schema</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#seeAlso" title="Browse http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></td>
+<td>
+<div class="property-object" rel="rdfs:seeAlso"><a class="browse" href="http://xmlns.com/foaf/0.1/" title="Browse http://xmlns.com/foaf/0.1/">http://xmlns.com/ foaf/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://purl.org/dc/elements/1.1/title">
+<td><a class="browse" href="http://purl.org/dc/elements/1.1/title" title="Browse http://purl.org/dc/elements/1.1/title">dc:title</a></td>
+<td property="dc:title" content="Web Of Trust vocabulary">
+<div class="property-object">Web Of Trust vocabulary</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/EncryptedDocument" typeof="owl:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Class" title="Browse http://www.w3.org/2002/07/owl#Class">owl:Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="An encrypted document intended for a set of recipients.">
+<div class="property-object">An encrypted document intended for a set of recipients.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#disjointWith">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#disjointWith" title="Browse http://www.w3.org/2002/07/owl#disjointWith">owl:disjointWith</a></td>
+<td>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Encrypted Document">
+<div class="property-object">Encrypted Document</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="Browse http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+<td>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/wordnet/1.6/Endorsement-4" title="Browse http://xmlns.com/wordnet/1.6/Endorsement-4">http://xmlns.com/ wordnet/ 1.6/ Endorsement-4</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/foaf/0.1/Document" title="Browse http://xmlns.com/foaf/0.1/Document">http://xmlns.com/ foaf/ 0.1/ Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/Endorsement" typeof="owl:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Class" title="Browse http://www.w3.org/2002/07/owl#Class">owl:Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="An endorsement resource containing a detached ascii signature.">
+<div class="property-object">An endorsement resource containing a detached ascii signature.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#disjointWith">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#disjointWith" title="Browse http://www.w3.org/2002/07/owl#disjointWith">owl:disjointWith</a></td>
+<td>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Endorsement">
+<div class="property-object">Endorsement</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="Browse http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+<td>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/foaf/0.1/Document" title="Browse http://xmlns.com/foaf/0.1/Document">http://xmlns.com/ foaf/ 0.1/ Document</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/wordnet/1.6/Endorsement-4" title="Browse http://xmlns.com/wordnet/1.6/Endorsement-4">http://xmlns.com/ wordnet/ 1.6/ Endorsement-4</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/PubKey" typeof="owl:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Class" title="Browse http://www.w3.org/2002/07/owl#Class">owl:Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A class used to represent a PGP/GPG public key for a user (an agent, person, group or organization).">
+<div class="property-object">A class used to represent a PGP/GPG public key for a user (an agent, person, group or organization).</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#disjointWith">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#disjointWith" title="Browse http://www.w3.org/2002/07/owl#disjointWith">owl:disjointWith</a></td>
+<td>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Public Key">
+<div class="property-object">Public Key</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="Browse http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+<td>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/wordnet/1.6/Credential" title="Browse http://xmlns.com/wordnet/1.6/Credential">http://xmlns.com/ wordnet/ 1.6/ Credential</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="stable">
+<div class="property-object">stable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/SigEvent" typeof="owl:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Class" title="Browse http://www.w3.org/2002/07/owl#Class">owl:Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="An event describing the action of a public key being signed by some other public key.">
+<div class="property-object">An event describing the action of a public key being signed by some other public key.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#disjointWith">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#disjointWith" title="Browse http://www.w3.org/2002/07/owl#disjointWith">owl:disjointWith</a></td>
+<td>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Key Signing Event">
+<div class="property-object">Key Signing Event</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="Browse http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+<td>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://www.w3.org/2002/12/cal/ical#Vevent" title="Browse http://www.w3.org/2002/12/cal/ical#Vevent">http://www.w3.org/ 2002/ 12/ cal/ ical#Vevent</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/wordnet/1.6/Event" title="Browse http://xmlns.com/wordnet/1.6/Event">http://xmlns.com/ wordnet/ 1.6/ Event</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/User" typeof="owl:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#Class" title="Browse http://www.w3.org/2002/07/owl#Class">owl:Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A user (agent, person, group or organization) of a PGP/GPG public key.">
+<div class="property-object">A user (agent, person, group or organization) of a PGP/GPG public key.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#disjointWith">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#disjointWith" title="Browse http://www.w3.org/2002/07/owl#disjointWith">owl:disjointWith</a></td>
+<td>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+<div class="connector">,</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+<div class="connector">&nbsp; and</div>
+<div class="property-object" rel="owl:disjointWith"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Key User">
+<div class="property-object">Key User</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="Browse http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+<td>
+<div class="property-object" rel="rdfs:subClassOf"><a class="browse" href="http://xmlns.com/foaf/0.1/Agent" title="Browse http://xmlns.com/foaf/0.1/Agent">http://xmlns.com/ foaf/ 0.1/ Agent</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="stable">
+<div class="property-object">stable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/assurance" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/assurance" title="Browse http://xmlns.com/wot/0.1/assurance">Assurance</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking a document to an endorsement resource containing a detached ascii signature.">
+<div class="property-object">A property linking a document to an endorsement resource containing a detached ascii signature.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/foaf/0.1/Document" title="Browse http://xmlns.com/foaf/0.1/Document">http://xmlns.com/ foaf/ 0.1/ Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Assurance">
+<div class="property-object">Assurance</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/Endorsement" title="Browse http://xmlns.com/wot/0.1/Endorsement">Endorsement</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="stable">
+<div class="property-object">stable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/encryptedTo" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/encryptedTo" title="Browse http://xmlns.com/wot/0.1/encryptedTo">Encrypted to</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking an encrypted document to a recipient.">
+<div class="property-object">A property linking an encrypted document to a recipient.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Encrypted to">
+<div class="property-object">Encrypted to</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/encrypter" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/encrypter" title="Browse http://xmlns.com/wot/0.1/encrypter">Encrypted by</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a>, 
+<div rel="rdf:type" class="connector"><a class="browse" href="http://www.w3.org/2002/07/owl#FunctionalProperty" title="Browse http://www.w3.org/2002/07/owl#FunctionalProperty">owl:FunctionalProperty</a></div>
+</th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking an encrypted document to the public key that was used to encrypt it.">
+<div class="property-object">A property linking an encrypted document to the public key that was used to encrypt it.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/EncryptedDocument" title="Browse http://xmlns.com/wot/0.1/EncryptedDocument">Encrypted Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Encrypted by">
+<div class="property-object">Encrypted by</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/fingerprint" typeof="owl:InverseFunctionalProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/fingerprint" title="Browse http://xmlns.com/wot/0.1/fingerprint">Fingerprint</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" title="Browse http://www.w3.org/2002/07/owl#InverseFunctionalProperty">owl:InverseFunctionalProperty</a>, 
+<div rel="rdf:type" class="connector"><a class="browse" href="http://www.w3.org/2002/07/owl#DatatypeProperty" title="Browse http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></div>
+</th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A public key hex fingerprint string (40 digits, white space insignificant).">
+<div class="property-object">A public key hex fingerprint string (40 digits, white space insignificant).</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Fingerprint">
+<div class="property-object">Fingerprint</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2001/XMLSchema#string" title="Browse http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/ 2001/ XMLSchema#string</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/hasKey" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/hasKey" title="Browse http://xmlns.com/wot/0.1/hasKey">has Key</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property to link a PubKey from a User">
+<div class="property-object">A property to link a PubKey from a User</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2002/07/owl#inverseOf">
+<td><a class="browse" href="http://www.w3.org/2002/07/owl#inverseOf" title="Browse http://www.w3.org/2002/07/owl#inverseOf">owl:inverseOf</a></td>
+<td>
+<div class="property-object" rel="owl:inverseOf"><a class="browse" href="http://xmlns.com/wot/0.1/identity" title="Browse http://xmlns.com/wot/0.1/identity">Identity</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="has Key">
+<div class="property-object">has Key</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/hex_id" typeof="owl:DatatypeProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/hex_id" title="Browse http://xmlns.com/wot/0.1/hex_id">Hex identifier</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#DatatypeProperty" title="Browse http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A public key hex identifier string (8 digits).">
+<div class="property-object">A public key hex identifier string (8 digits).</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Hex identifier">
+<div class="property-object">Hex identifier</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2001/XMLSchema#string" title="Browse http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/ 2001/ XMLSchema#string</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="stable">
+<div class="property-object">stable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/identity" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/identity" title="Browse http://xmlns.com/wot/0.1/identity">Identity</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a>, 
+<div rel="rdf:type" class="connector"><a class="browse" href="http://www.w3.org/2002/07/owl#FunctionalProperty" title="Browse http://www.w3.org/2002/07/owl#FunctionalProperty">owl:FunctionalProperty</a></div>
+</th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking a public key to the user of the key.">
+<div class="property-object">A property linking a public key to the user of the key.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Identity">
+<div class="property-object">Identity</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/User" title="Browse http://xmlns.com/wot/0.1/User">Key User</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/length" typeof="owl:DatatypeProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/length" title="Browse http://xmlns.com/wot/0.1/length">Length</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#DatatypeProperty" title="Browse http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A numeric string representing the length, in bytes, of a public key.">
+<div class="property-object">A numeric string representing the length, in bytes, of a public key.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Length">
+<div class="property-object">Length</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2001/XMLSchema#integer" title="Browse http://www.w3.org/2001/XMLSchema#integer">http://www.w3.org/ 2001/ XMLSchema#integer</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="stable">
+<div class="property-object">stable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/pubkeyAddress" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/pubkeyAddress" title="Browse http://xmlns.com/wot/0.1/pubkeyAddress">Address</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="The location of an ascii version of a public key.">
+<div class="property-object">The location of an ascii version of a public key.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Address">
+<div class="property-object">Address</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/foaf/0.1/Document" title="Browse http://xmlns.com/foaf/0.1/Document">http://xmlns.com/ foaf/ 0.1/ Document</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/sigdate" typeof="owl:DatatypeProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/sigdate" title="Browse http://xmlns.com/wot/0.1/sigdate">Signature date</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#DatatypeProperty" title="Browse http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="The date of a public key signature event.">
+<div class="property-object">The date of a public key signature event.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Signature date">
+<div class="property-object">Signature date</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2001/XMLSchema#date" title="Browse http://www.w3.org/2001/XMLSchema#date">http://www.w3.org/ 2001/ XMLSchema#date</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/signed" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/signed" title="Browse http://xmlns.com/wot/0.1/signed">Signed</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking a public key to a public key signature event.">
+<div class="property-object">A property linking a public key to a public key signature event.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Signed">
+<div class="property-object">Signed</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="testing">
+<div class="property-object">testing</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/signer" typeof="owl:ObjectProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/signer" title="Browse http://xmlns.com/wot/0.1/signer">Signer</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#ObjectProperty" title="Browse http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a>, 
+<div rel="rdf:type" class="connector"><a class="browse" href="http://www.w3.org/2002/07/owl#FunctionalProperty" title="Browse http://www.w3.org/2002/07/owl#FunctionalProperty">owl:FunctionalProperty</a></div>
+</th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="A property linking a public key signature event to the public key that was used to sign.">
+<div class="property-object">A property linking a public key signature event to the public key that was used to sign.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Signer">
+<div class="property-object">Signer</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://xmlns.com/wot/0.1/PubKey" title="Browse http://xmlns.com/wot/0.1/PubKey">Public Key</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://xmlns.com/wot/0.1/sigtime" typeof="owl:DatatypeProperty">
+<tr>
+<th colspan="2"><a class="browse" href="http://xmlns.com/wot/0.1/sigtime" title="Browse http://xmlns.com/wot/0.1/sigtime">Signature time</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2002/07/owl#DatatypeProperty" title="Browse http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td property="rdfs:comment" content="The time (of day) of a public key signature event.">
+<div class="property-object">The time (of day) of a public key signature event.</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">rdfs:domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://xmlns.com/wot/0.1/SigEvent" title="Browse http://xmlns.com/wot/0.1/SigEvent">Key Signing Event</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="Browse http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a></td>
+<td>
+<div class="property-object" rel="rdfs:isDefinedBy"><a class="browse" href="http://xmlns.com/wot/0.1/" title="Browse http://xmlns.com/wot/0.1/">http://xmlns.com/ wot/ 0.1/ </a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td property="rdfs:label" content="Signature time">
+<div class="property-object">Signature time</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">rdfs:range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2001/XMLSchema#time" title="Browse http://www.w3.org/2001/XMLSchema#time">http://www.w3.org/ 2001/ XMLSchema#time</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+<td><a class="browse" href="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" title="Browse http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">vs:term status</a></td>
+<td property="vs:term_status" content="unstable">
+<div class="property-object">unstable</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

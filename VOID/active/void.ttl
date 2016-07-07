@@ -1,0 +1,34 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix hmdb:    <http://identifiers.org/hmdb/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+
+wprdf:
+      a       void:Dataset ;
+      dcterms:description "This is the VoID description for a WikiPathwyas-RDF dataset."@en ;
+      dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+      dcterms:subject <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7227> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9598> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29760> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1773> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3702> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3847> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7165> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1515> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9615> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9606> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3694> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7955> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9823> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9031> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1423> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4530> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10116> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6239> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4577> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4081> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9913> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=562> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9796> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=8364> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5518> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4932> , <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10090> , biopax:Pathway ;
+      dcterms:title "WikiPathways-RDF VoID Description"@en ;
+      pav:createdAt <http://dbpedia.org/resource/Maastricht_University> ;
+      pav:createdBy <http://orcid.org/0000-0001-9773-4008> ;
+      pav:createdOn "2013-07-10T11:51:47.03Z"^^xsd:dateTime ;
+      pav:importedBy <http://orcid.org/0000-0001-9773-4008> ;
+      pav:importedFrom <http://www.wikipathways.org/wpi/webservice/webservice.php> ;
+      pav:importedOn "2013-07-10T11:51:47.03Z"^^xsd:dateTime ;
+      void:dataDump <http://openphactsdata.bigcat.unimaas.nl/v1.3/wpContent_v0.0.69675_20130710.ttl> ;
+      void:exampleResource
+              <http://identifiers.org/ncbigene/2678> , <http://identifiers.org/pubmed/15215856> , wprdf:WP15 , <http://identifiers.org/obo.chebi/17242> , hmdb:HMDB02005 ;
+      void:uriSpace wprdf: , <http://identifiers.org> ;
+      void:vocabulary foaf: , gpml: , pav: , biopax: , wp: ;
+      <http://voag.linkedmodel.org/schema/voag#frequencyOfChange>
+              freq:irregular ;
+      foaf:homepage <http://www.wikipathways.org/> .

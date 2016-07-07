@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+    xmlns:voag="http://voag.linkedmodel.org/schema/voag#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:creativecommons="http://creativecommons.org/ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://www.linkedmodel.org/schema/vaem" >
+<!-- separator -->
+<rdf:Description rdf:about="">
+<vaem:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAEM stands for "Vocabulary for Attaching Essential Metadata". The purpose of VAEM is to provide, by import, a foundation for commonly needed resources when building an ontology. An effort has been made to restrict these resources to a minimal level. In some ways DC, Dublin Core, could have provided such a foundation. Importing DC unfortunately causes "ontology glut", through the import of many DC Terms. VAEM attaches basic metadata properties and dimension properties, such as domain, discipline, aspect and viewpoint, to the 'owl:Ontology' class to fully qualify the ontology. What VAEM regards as 'essential metadata' is data about dates and times, confidentiality, and other characterisitic qualifiers of the ontology, but also references to where a ontology is documented and where to find ontology Governance, Attribution and Provenance</vaem:description>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vocabulary for Attaching Essential Metadata</rdfs:label>
+<vaem:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vocabulary for Attaching Essential Metadata</vaem:name>
+<vaem:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAEM</vaem:acronym>
+<vaem:namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.linkedmodel.org/1.2/schema/vaem#</vaem:namespace>
+<vaem:namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaem</vaem:namespacePrefix>
+<vaem:Category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category information</vaem:Category>
+<vaem:Domain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain information</vaem:Domain>
+<vaem:Scope rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scope information</vaem:Scope>
+<vaem:dateCreated rdf:datatype="http://www.linkedmodel.org/schema/vaem#dateUnion">2011-04-20</vaem:dateCreated>
+<vaem:lastUpdated rdf:datatype="http://www.linkedmodel.org/schema/vaem#dateUnion">2012-04-20</vaem:lastUpdated>
+<vaem:revisionNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</vaem:revisionNumber>
+<voag:hasLicenseType rdf:resource="http://voag.linkedmodel.org/schema/voag#CC-SHAREALIKE_3PT0-US"/>
+<vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+<vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+<vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+<vaem:usesNonImportedResource rdf:resource="http://voag.linkedmodel.org/schema/voag#CC-SHAREALIKE_3PT0-US"/>
+<vaem:usesNonImportedResource rdf:resource="http://voag.linkedmodel.org/schema/voag#hasLicenseType"/>
+<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Id: AFDSI_team version_data and compiler_name 2012-07-07 06:24:02 Gig Graham $</owl:versionInfo>
+<owl:versionIRI rdf:resource="http://www.linkedmodel.org/1.2/schema/vaem"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#namespace">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:namespace' provides a means to specify the onotlogy URI with which a graph is primarily associated. The intent is to allow multiple graphs to define statements for resources in the same Ontology namespace. For example, a foundation level graph with the base URI of 'http://www.somesite.com/1.0/schema/OurOntology' may define general concepts for 'OurOntology'. Another graph with the base URI 'http://www.somesite.com/1.0/schema/level2/OurOntology' may add more specific details to the same 'OurOntology'. Each of these two graphs would carry the same value for 'vaem:namespace', that is, 'http://www.somesite.com/schema/OurOntology'. In other words, an ontology URI is the URI associated with the resources of a controlled namespace. On the other hand the graph URIs (the base URIs) identify the graphs that hold resources that make up an ontology</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">namespace</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#Domain">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A domain is a subject area of interest. Examples of domains are 'enterprise', 'process', 'organization' and 'system'. In 'vaem' the notion of 'Domain' is used as a dimension for characterizing an ontology graph</vaem:definition>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#acronym">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:acronym' provides a common way to define a commonly used abbreviation on a resource</vaem:definition>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acronym</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#id">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:id' is intended for general use as a means to specifiy an identifier. The type of this property is intentionally set to 'rdf:Property' so that use of the property can allow both object and scaler values.  For this reason, the property is rangeless</vaem:definition>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#definition">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that can be freely used on any kind of resource. The range of the property is 'xsd:string'</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#lastUpdated">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:lastUpdated' is intended for general use as the name implies</vaem:definition>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last updated</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#namespacePrefix">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:namespacePrefix' specifes a short handle or label for the URI of an Ontology.  Multiple graphs can define statements for resources in the same Ontololgy namespace</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">namespace prefix</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rights</rdfs:label>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject</rdfs:label>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#revision">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:revision' is an annotation property intended for general use as the name implies.</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revision</rdfs:label>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#dateCreated">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:dateCreated' is intended for general use as the name implies.  The range of the property is set as 'vaem:dateUnion' so as to allow a value to have a number of forms from a year only to a full timestamp</vaem:definition>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date created</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#dateUnion">
+<owl:unionOf rdf:nodeID="A4"/>
+<vaem:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data type that is the union of xsd:date, xsd:dateTime and xsd:gYear. LMC's 'dateUnion' is equivalent to the xsd specification that uses an xsd:union of memberTypes='xsd:date xsd:dateTime xsd:gYear'</vaem:description>
+<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date union</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#description">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:description' is intended for general use as the name implies.  Unlike 'vaem:definition',  'vaem:description' is an 'owl:DatatypeProperty'. As such it can play a stronger role in the model, for example, as a predicate in an axiom</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#usesNonImportedResource">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A general property that has multiple uses. In VAEM it is used on owl:Ontology to express dependencies on resources from graphs that are not imported</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses non-imported resource</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#name">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:name' is intended for general use. In many cases 'rdfs:label' could be used give names to resources. In the case where compliance with a specific naming rule is needed, 'vaem:name' allows  a resource to carry a name that is used in more specific contexts. Making 'vaem:name' a sub-property of 'rdfs:label' allows 'vaem:name' to serve in the same way as an 'rdfs:label'</vaem:definition>
+<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#Category">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category is an abstract class for all concepts whose roles are to characterize other concepts in some manner</vaem:definition>
+<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#url">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:url' is intended for general use as the name implies.  The range of the property is set as an XSD URI</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#timestamp">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The property 'vaem:timestamp' is intended for general use as the name implies.  The range of the property is an XSD data time</vaem:definition>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timestamp</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="#Scope">
+<vaem:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scope is used indicate a scope of relevance of an ontology. There are no instances of these properties in VAEM. Each context of use will need specific treatment</vaem:definition>
+<rdfs:subClassOf rdf:resource="#Category"/>
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scope</rdfs:label>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:nodeID="A2">
+<owl:onProperty rdf:resource="#namespace"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:nodeID="A4">
+<rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:nodeID="A27">
+<owl:onProperty rdf:resource="#namespacePrefix"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:nodeID="A36">
+<owl:onProperty rdf:resource="#dateCreated"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:nodeID="A41">
+<owl:onProperty rdf:resource="#lastUpdated"/>
+</rdf:Description>
+<!-- separator -->
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+<rdfs:subClassOf rdf:nodeID="A2"/>
+<rdfs:subClassOf rdf:nodeID="A27"/>
+<rdfs:subClassOf rdf:nodeID="A36"/>
+<rdfs:subClassOf rdf:nodeID="A35"/>
+<rdfs:subClassOf rdf:nodeID="A41"/>
+</rdf:Description>
+</rdf:RDF>
